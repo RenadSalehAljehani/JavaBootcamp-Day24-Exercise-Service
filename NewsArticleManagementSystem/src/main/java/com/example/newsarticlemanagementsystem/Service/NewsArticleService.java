@@ -45,7 +45,7 @@ public class NewsArticleService {
     // 5. Publish NewsArticles
     public boolean publishNewsArticle(String ID){
         for (int i = 0; i < newsArticles.size(); i++) {
-            if(newsArticles.get(i).getID().equalsIgnoreCase(ID) && !newsArticles.get(i).isPublished()){
+            if(newsArticles.get(i).getID().equalsIgnoreCase(ID)){
                 newsArticles.get(i).setPublished(true);
                 return true;
             }
